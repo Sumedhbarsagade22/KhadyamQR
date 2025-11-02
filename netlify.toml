@@ -1,12 +1,13 @@
 [build]
-  command = "pnpm run build:client"
+  command = "pnpm install && pnpm run build:client"
   functions = "netlify/functions"
-  publish = "dist/spa"
+  publish = "dist"
 
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
-  
+
+# Handle API requests
 [[redirects]]
   force = true
   from = "/api/*"
@@ -18,3 +19,4 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  force = true

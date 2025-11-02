@@ -16,7 +16,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "dist/spa",
+    outDir: "dist",
     emptyOutDir: true,
   },
   plugins: [react()],
