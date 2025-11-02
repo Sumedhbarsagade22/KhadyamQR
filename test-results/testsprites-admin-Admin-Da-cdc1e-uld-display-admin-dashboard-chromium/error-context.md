@@ -1,0 +1,91 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - img "KhadyamQR logo" [ref=e7]
+          - generic [ref=e8]: KhadyamQR
+        - generic [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: /
+          - button "Sign Out" [ref=e11] [cursor=pointer]
+    - main [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]: "2"
+          - generic [ref=e16]: Total Restaurants
+        - generic [ref=e17]:
+          - generic [ref=e18]: "2"
+          - generic [ref=e19]: Active
+        - generic [ref=e20]:
+          - generic [ref=e21]: "0"
+          - generic [ref=e22]: Disabled
+        - generic [ref=e23]:
+          - generic [ref=e24]: "1"
+          - generic [ref=e25]: QR Generated
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Restaurants (2)" [level=2] [ref=e28]
+          - generic [ref=e29]:
+            - textbox "Search restaurants..." [ref=e30]
+            - button "🔄 Refresh" [ref=e31] [cursor=pointer]
+            - link "+ Add Restaurant" [ref=e32] [cursor=pointer]:
+              - /url: "#add-restaurant"
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - generic [ref=e36]: N/A
+              - generic [ref=e37]:
+                - generic [ref=e38]:
+                  - generic [ref=e39]: restaurant
+                  - generic [ref=e40]: Active
+                - generic [ref=e41]: /restaurant
+              - button "⏸️" [ref=e42] [cursor=pointer]
+              - button "🗑️" [ref=e43] [cursor=pointer]
+            - generic [ref=e44]: No QR yet
+            - generic [ref=e45]:
+              - button "✨ Generate QR" [ref=e46] [cursor=pointer]
+              - link "👁️ Preview" [ref=e47] [cursor=pointer]:
+                - /url: /menu/restaurant
+              - button "🔑 Create Login" [ref=e48] [cursor=pointer]
+              - button "🔒 Reset Password" [ref=e49] [cursor=pointer]
+              - button "🍽️ Manage Menu" [ref=e50] [cursor=pointer]
+          - generic [ref=e51]:
+            - generic [ref=e52]:
+              - img "logo" [ref=e53] [cursor=pointer]
+              - generic [ref=e54]:
+                - generic [ref=e55]:
+                  - generic [ref=e56]: Hotel maher
+                  - generic [ref=e57]: Active
+                - generic [ref=e58]: /hotel-maher
+              - button "⏸️" [ref=e59] [cursor=pointer]
+              - button "🗑️" [ref=e60] [cursor=pointer]
+            - img "QR" [ref=e61] [cursor=pointer]
+            - generic [ref=e62]:
+              - button "📥 Download QR" [ref=e63] [cursor=pointer]
+              - button "📋 Copy URL" [ref=e64] [cursor=pointer]
+              - button "🔄 Regenerate" [ref=e65] [cursor=pointer]
+              - link "👁️ Preview" [ref=e66] [cursor=pointer]:
+                - /url: /menu/hotel-maher
+              - button "🔑 Create Login" [ref=e67] [cursor=pointer]
+              - button "🔒 Reset Password" [ref=e68] [cursor=pointer]
+              - button "🍽️ Manage Menu" [ref=e69] [cursor=pointer]
+      - generic [ref=e70]:
+        - heading "➕ Add New Restaurant" [level=3] [ref=e71]
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: Name
+            - textbox "Name" [ref=e75]:
+              - /placeholder: e.g. Spice Villa
+          - generic [ref=e76]:
+            - generic [ref=e77]: Logo
+            - button "Logo" [ref=e78]
+          - generic [ref=e79]: Slug will be generated automatically
+          - button "Create" [ref=e80] [cursor=pointer]
+```

@@ -1,0 +1,112 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - list
+    - region "Notifications alt+T"
+    - generic:
+      - banner:
+        - generic:
+          - generic:
+            - img
+            - generic: KhadyamQR
+          - generic:
+            - link:
+              - /url: /
+              - text: Home
+            - button: Sign Out
+      - main:
+        - generic:
+          - generic:
+            - generic: "2"
+            - generic: Total Restaurants
+          - generic:
+            - generic: "2"
+            - generic: Active
+          - generic:
+            - generic: "0"
+            - generic: Disabled
+          - generic:
+            - generic: "1"
+            - generic: QR Generated
+        - generic:
+          - generic:
+            - heading [level=2]: Restaurants (2)
+            - generic:
+              - textbox:
+                - /placeholder: Search restaurants...
+              - button: 🔄 Refresh
+              - link:
+                - /url: "#add-restaurant"
+                - text: + Add Restaurant
+          - generic:
+            - generic:
+              - generic:
+                - generic: N/A
+                - generic:
+                  - generic:
+                    - generic: restaurant
+                    - generic: Active
+                  - generic: /restaurant
+                - button: ⏸️
+                - button: 🗑️
+              - generic: No QR yet
+              - generic:
+                - button: ✨ Generate QR
+                - link:
+                  - /url: /menu/restaurant
+                  - text: 👁️ Preview
+                - button: 🔑 Create Login
+                - button: 🔒 Reset Password
+                - button: 🍽️ Manage Menu
+            - generic:
+              - generic:
+                - img
+                - generic:
+                  - generic:
+                    - generic: Hotel maher
+                    - generic: Active
+                  - generic: /hotel-maher
+                - button: ⏸️
+                - button: 🗑️
+              - img
+              - generic:
+                - button: 📥 Download QR
+                - button: 📋 Copy URL
+                - button: 🔄 Regenerate
+                - link:
+                  - /url: /menu/hotel-maher
+                  - text: 👁️ Preview
+                - button: 🔑 Create Login
+                - button [expanded]: 🔒 Reset Password
+                - button: 🍽️ Manage Menu
+        - generic:
+          - heading [level=3]: ➕ Add New Restaurant
+          - generic:
+            - generic:
+              - generic: Name
+              - textbox:
+                - /placeholder: e.g. Spice Villa
+            - generic:
+              - generic: Logo
+              - button
+            - generic: Slug will be generated automatically
+            - button: Create
+  - dialog "Reset Password" [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading "Reset Password" [level=2] [ref=e5]
+        - paragraph [ref=e6]: Reset password for hotel-maher@restaurant.com
+      - generic [ref=e8]:
+        - generic [ref=e9]: New Password
+        - textbox "New Password" [active] [ref=e10]:
+          - /placeholder: Enter new password
+          - text: "11111111"
+      - generic [ref=e11]:
+        - button "Cancel" [ref=e12] [cursor=pointer]
+        - button "Reset Password" [ref=e13] [cursor=pointer]
+    - button "Close" [ref=e14] [cursor=pointer]:
+      - img [ref=e15]
+      - generic [ref=e18]: Close
+```
